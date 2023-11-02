@@ -1,0 +1,87 @@
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" />
+    <title>Cloud Ascend - A Workshop by GDSC MPSTME</title>
+    <style>
+        body {
+            font-family: Inter, Arial, Helvetica, sans-serif;
+            background-color: lightblue;
+            padding: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 200px;
+        }
+
+        h1,
+        p,
+        footer {
+            text-align: center;
+        }
+
+        footer {
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Cloud Ascend - A Workshop by GDSC MPSTME</h1>
+    <img src="https://play-lh.googleusercontent.com/RyoQTmHnxsxPYabsETmWVXHtLorVh_yOO48hsdv2VmI-Uki4qt5c5vV1cicJODV56A4"
+        alt="Google Cloud" />
+    <p>
+        Cloud Ascend is a two-day workshop organized by GDSC MPSTME. The workshop
+        aims to teach participants about Docker and DevOps with Google Cloud
+        Console, and how to use these technologies to create and deploy scalable
+        and secure applications.
+    </p>
+    <p>
+        The workshop consists of two parts: a collaborative speaker session on
+        November 2, 2023, and a hands-on workshop on November 3, 2023. The speaker
+        session will feature experts from the field of Google Cloud and Generative
+        AI, who will share their insights and experiences on topics such as cloud
+        computing, artificial intelligence, machine learning, and natural language
+        processing. The workshop will provide practical guidance and exercises on
+        how to use Docker and DevOps tools to build, test, and deploy AI models on
+        Google Cloud Platform.
+    </p>
+    <p>
+        The workshop is open to anyone who is interested in learning more about
+        Google Cloud and Generative AI, regardless of their level of expertise or
+        background. Participants who attend both days of the workshop will receive
+        an exclusive certificate acknowledging their active engagement and
+        learning in this event.
+    </p>
+    <p>
+        You can learn more about GDSC MPSTME and their upcoming events by visiting
+        their website: <a href="https://gdscmpstme.com">GDSC MPSTME</a> or their
+        community page:
+        <a href="https://gdsc.community.dev/mukesh-patel-school-of-technology-management-and-engineering-mumbai/">
+            Google Developer Student Clubs Mukesh Patel School of Technology
+            Management and Engineering - Mumbai
+        </a>
+        .
+    </p>
+
+    <footer>&copy; <span id="year"></span> GDSC MPSTME</footer>
+</body>
+
+<script>
+    fetch('/current-year')
+        .then(res => res.text())
+        .then(text =>
+        {
+            document.getElementById('year').innerText = text;
+        });
+</script>
+
+</html>
